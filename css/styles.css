@@ -93,8 +93,31 @@ a.text-gold:hover {
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 500px) {
+	.col-1.pt-2.text-gold {
+		display: none;
+	}
+
+	#expertise.row.container {
+		display: block;
+	}
+	
 	h2.mb-0 {
-		font-size: 20px;
+		font-size: 30px;
+		transform: rotate(90deg);
+		transform-origin: left top 1;
+	}	
+
+	span.text-muted.font-italic {
+		display: none;
+	}
+
+	span.h6 {
+		font-size: 16px;
+	}
+
+	span.float-right.font-weight-bold {
+		font-size: 10px;
+		display: none;
 	}
 }
