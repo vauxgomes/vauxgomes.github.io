@@ -120,4 +120,8 @@ a.text-gold:hover {
 		font-size: 10px;
 		display: none;
 	}
+
+	#testimonials {
+		min-height: 245px;
+	}
 }
