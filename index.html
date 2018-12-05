@@ -41,7 +41,7 @@
 
 			<div id="menu" class="collapse navbar-collapse float-right">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+					<li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 					</li>
@@ -433,7 +433,7 @@
 							<i class="fas fa-certificate mr-2 text-gold"></i>
 						</div>
 						<div class="col h6">
-							Machine Learning with Python
+							<a href="https://goo.gl/RB1nTo">Machine Learning with Python</a>
 						</div>
 					</div>
 					<div class="row">
@@ -441,7 +441,7 @@
 							<i class="fas fa-certificate mr-2 text-gold"></i>
 						</div>
 						<div class="col h6">
-							Data Analysis with Python
+							<a href="https://goo.gl/5SrLHu">Data Analysis with Python</a>
 						</div>
 					</div>
 					<div class="row">
@@ -449,7 +449,7 @@
 							<i class="fas fa-certificate mr-2 text-gold"></i>
 						</div>
 						<div class="col h6">
-							Python for Data Science
+							<a href="https://goo.gl/mW1Ncs">Python for Data Science</a>
 						</div>
 					</div>
 					<div class="row">
@@ -457,7 +457,7 @@
 							<i class="fas fa-certificate mr-2 text-gold"></i>
 						</div>
 						<div class="col h6">
-							Data Visualization with Python
+							<a href="https://goo.gl/vZJHRf">Data Visualization with Python</a>
 						</div>
 					</div>
 					<div class="row">
@@ -465,7 +465,7 @@
 							<i class="fas fa-certificate mr-2 text-gold"></i>
 						</div>
 						<div class="col h6">
-								Capstone: Retrieving, Processing, and isualizing Data with Python
+								<a href="https://goo.gl/37kKxQ">Capstone: Retrieving, Processing, and Visualizing Data with Python</a>
 						</div>
 					</div>
 					<div class="row">
@@ -473,7 +473,7 @@
 							<i class="fas fa-certificate mr-2 text-gold"></i>
 						</div>
 						<div class="col h6">
-							Scrum Fundamentals Certified
+							<a href="https://goo.gl/WtL9Qd">Scrum Fundamentals Certified</a>
 						</div>
 					</div>
 					<div class="row">
@@ -561,6 +561,11 @@
 				});
 			}()
 		);
+
+		$('#menu .nav-item a').on('click', function (event) {
+			$('#menu').find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
 	</script>
 </body>
 </html>

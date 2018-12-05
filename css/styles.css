@@ -81,6 +81,10 @@ a.text-gold:hover {
 .progress-thin {
 	height: 10px;
 }
+/* Sections */
+#testimonials {
+	min-height: 210px;
+}
 
 /* Media queries */
 @media (max-width: 991px) {
