@@ -29,6 +29,10 @@
 	background-color: #F1B200;
 }
 
+.btn.bg-gold:hover {
+	background-color: #e6a800;
+}
+
 /* Timeline */
 ul.timeline {
 	list-style-type: none;
