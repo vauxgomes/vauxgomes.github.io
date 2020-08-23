@@ -1,135 +1,39 @@
-/* Rows */
-.row-head {
-	padding-bottom: 40px;
-	margin-right: 0px;
-	margin-left: 0px;
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	color: #414149;
 }
 
-.row-body {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-right: 0px;
-	margin-left: 0px;
-}
-
-/* Colors */
-.bg-dark-primary {
-	background-color: #252525;
-}
-
-.bg-dark-secondary {
-	background-color: #2C2D2E;
-}
-
-.text-gold {
-	color: #F1B200;
-}
-
-.bg-gold {
-	background-color: #F1B200;
-}
-
-.btn.bg-gold:hover {
-	background-color: #e6a800;
-}
-
-/* Timeline */
-ul.timeline {
-	list-style-type: none;
-	position: relative;
-}
-
-ul.timeline:before {
-	content: ' ';
-	background: #F1B200;
-	display: inline-block;
-	position: absolute;
-	left: 29px;
-	width: 2px;
+.wrapper .side-content {
+	min-width: 300px;
 	height: 100%;
-	z-index: 400;
+	border-right: 1px solid rgb(240, 240, 240);
 }
 
-ul.timeline > li {
-	margin: 20px 0;
-	padding-left: 20px;
+.text-soft {
+	color: rgb(138, 136, 136);
 }
 
-ul.timeline > li:before {
-	content: ' ';
-	background: #343a40;
-	display: inline-block;
-	position: absolute;
-	border-radius: 50%;
-	border: 3px solid #F1B200;
-	left: 20px;
-	width: 20px;
-	height: 20px;
-	z-index: 400;
+.text-md {
+	font-size: 15px;
 }
 
-/* Link */
-.nav-link {
-	color: #2C2D2E;
+.display-6 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+	display: block;
 }
 
-.nav-link:hover {
-	color: white;
+#table-contacts td {
+	padding: 5px;
+	font-size: 15px;
 }
 
-a.text-gold:hover {
-	color: #F1B200;
+#table-contacts td:nth-child(1) {
+	color: #ccc;
 }
 
-/* Progress bar */
-.progress-thin {
-	height: 10px;
-}
-/* Sections */
-#testimonials {
-	min-height: 210px;
-}
-
-/* Media queries */
-@media (max-width: 991px) {
-	#expertise .fas {
-		font-size: 20px
-	}
-
-	h2.mb-0 {
-		font-size: 28px;
-	}
-}
-
-@media (max-width: 500px) {
-	.col-1.pt-2.text-gold {
-		display: none;
-	}
-
-	#expertise.row.container {
-		display: block;
-	}
-	
-	h2.mb-0 {
-		font-size: 30px;
-		transform: rotate(90deg);
-		transform-origin: left top 1;
-	}	
-
-	span.text-muted.font-italic {
-		display: none;
-	}
-
-	span.h6 {
-		font-size: 16px;
-	}
-
-	span.float-right.font-weight-bold {
-		font-size: 10px;
-		display: none;
-	}
-
-	#testimonials {
-		min-height: 245px;
-	}
+#table-contacts td:nth-child(2) {
+	color: rgb(138, 136, 136);
 }
