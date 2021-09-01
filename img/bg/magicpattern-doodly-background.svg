@@ -1,0 +1,123 @@
+
+  <svg
+    width='100%'
+    height='100%'
+    viewBox='0 0 1000 1000'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+  <defs>
+      
+    <filter id='doodle'>
+      <feTurbulence 
+        result='TURBULENCE' 
+        baseFrequency='0.03815474500373536' 
+        numOctaves='1' 
+        seed='1' 
+      />
+      <feDisplacementMap in='SourceGraphic' in2='TURBULENCE' scale='20' />
+    </filter>
+
+    <filter id='offset-1'>
+      <feOffset dx='30' dy='0' result='OFFSET-1'/>
+    </filter>
+
+    <filter id='offset-2'>
+      <feOffset dx='20' dy='0' result='OFFSET-2'/>
+    </filter>
+
+    <filter id='offset-3'>
+      <feOffset dx='0' dy='50' result='OFFSET-3'/>
+    </filter>
+
+    <mask id='brush-mask'>
+      <rect x='0' y='0' width='1000' height='1000' fill='white' filterUnits='userSpaceOnUse'/>
+      
+  <circle 
+    cx='709' 
+    cy='406' 
+    r='8px' 
+    fill='black'  
+    filter='url(#doodle)'
+  />
+  <circle 
+    cx='394' 
+    cy='322' 
+    r='7px' 
+    fill='black'  
+    filter='url(#doodle)'
+  />
+  <circle 
+    cx='312' 
+    cy='319' 
+    r='9px' 
+    fill='black'  
+    filter='url(#doodle)'
+  />
+  <circle 
+    cx='330' 
+    cy='732' 
+    r='12px' 
+    fill='black'  
+    filter='url(#doodle)'
+  />
+  
+      
+    <g filter='url(#offset-1)' mask='url(#brush-mask)'>
+      <path
+        fill='none'
+        stroke-width='10px'
+        stroke='black'
+        d='M788.5 700.5 Q 620.9218269585423 868.9996095547027 386.5 830'
+        filter='url(#doodle)'    
+      />
+    </g>
+    <g filter='url(#offset-2)' mask='url(#brush-mask)'  transform='scale(0.6)' transform-origin='center'>
+      <path
+        fill='none'
+        stroke-width='7px'
+        stroke='black'
+        d='M788.5 700.5 Q 614.4827593793735 849.0111526680168 386.5 830'
+        filter='url(#doodle)'
+      />
+    </g>
+
+
+    <g filter='url(#offset-3)'>
+      <path
+        fill='none'
+        stroke-width='7px'
+        stroke='black'
+        d='M165.5 516 Q 224.4230270755109 309.26931316261096 406.5 195'
+        filter='url(#doodle)'
+      />
+    </g>
+
+
+    <g filter='url(#offset-3)'>
+      <path
+        fill='none'
+        stroke-width='5px'
+        stroke='black'
+        d='M786 308.5 Q 894.2478240524763 503.8176159180327 788.5 700.5'
+        filter='url(#doodle)'
+      />
+    </g>
+
+    </mask>
+
+      
+      
+      <clipPath id='shape'>
+        <path fill='currentColor' d='M788.5,700.5Q630,901,386.5,830Q143,759,165.5,516Q188,273,406.5,195Q625,117,786,308.5Q947,500,788.5,700.5Z'></path>
+      </clipPath> 
+    </defs>
+  
+    <g  mask='url(#brush-mask)'>
+      <path
+        filter='url(#doodle)'
+        fill='#c2edda'
+        d='M788.5,700.5Q630,901,386.5,830Q143,759,165.5,516Q188,273,406.5,195Q625,117,786,308.5Q947,500,788.5,700.5Z'  
+      />
+    </g>
+  
+  </svg>
