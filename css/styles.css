@@ -99,7 +99,7 @@ section {
 .topnav {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	align-items: flex-center;
 	justify-content: space-between;
 
 	padding: 1.5rem 1rem;
@@ -113,11 +113,6 @@ section {
 	gap: 1rem;
 
 	font: var(--small);
-}
-
-.topmenu_items a {
-	padding-bottom: 0.5rem;
-	border-bottom: 2px solid transparent;
 }
 
 /* Summary */
@@ -202,6 +197,39 @@ section {
 	height: 50px;
 
 	object-fit: contain;
+}
+
+/* Tooltip */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	position: absolute;
+	width: 180px;
+	top: 120%;
+	left: -120px;
+	z-index: 2;
+
+	color: white;
+	background-color: var(--primary);
+	padding: 0.5rem;
+	border-radius: 6px;
+	text-align: center;
+
+	font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; top: -5px;}
+    to   { opacity: 1; }
 }
 
 /* ---- COMMONS ---- */
