@@ -11,6 +11,7 @@
 	--line-gray: #e7ebee;
 	--primary: #68d388;
 	--primary-light: #c2edda;
+	--secondary: #f4b942;
 
 	/* Measures */
 	--max-width: 1024px;
@@ -111,8 +112,6 @@ section {
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
-
-	font: var(--small);
 }
 
 /* Summary */
@@ -193,13 +192,50 @@ section {
 }
 
 .stamp .company-logo {
-	
 	padding: 0.25rem;
 	border-radius: 5px;
 	width: 50px;
 	height: 50px;
 
 	object-fit: contain;
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.skill {
+	cursor: pointer;
+	background: white;
+	border-radius: 0.25rem;
+	padding: 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.5rem;
+
+	font-size: 0.9rem;
+}
+
+.skill:hover {
+	transform: scale(105%);
+}
+
+/* Progress */
+.progress-bar {
+	width: 100%;
+	height: 1rem;
+	border: 1px solid var(--primary);
+	border-radius: 3px;
+}
+
+.progress-bar .progress {
+	/* width: 100%; */
+	height: 100%;
+	background-color: var(--primary);
 }
 
 /* Tooltip */
@@ -249,15 +285,28 @@ section {
 }
 
 /* Tablets */
+@media screen and (max-width: 425px) {
+	.topnav .items {
+		font-size: small;
+	}
+}
 @media screen and (min-width: 768px) {
 	.cards {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.skills {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.cards {
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.skills {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 }
 
@@ -341,6 +390,46 @@ section {
 
 .mb-5 {
 	margin-bottom: 3rem;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.w-20 {
+	width: 20%;
+}
+
+.w-30 {
+	width: 30%;
+}
+
+.w-40 {
+	width: 40%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-60 {
+	width: 60%;
+}
+
+.w-70 {
+	width: 70%;
+}
+
+.w-80 {
+	width: 80%;
+}
+
+.w-90 {
+	width: 90%;
+}
+
+.w-100 {
+	width: 100%;
 }
 
 /* Position */
