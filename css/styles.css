@@ -142,6 +142,7 @@ section {
 }
 
 .banner .info {
+	max-width: 525px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -155,7 +156,7 @@ section {
 
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 312px);
+	grid-template-columns: 1fr;
 	gap: 1.5rem;
 }
 
@@ -183,14 +184,16 @@ section {
 }
 
 .stamp {
-	cursor: pointer;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 1rem;
+
+	margin-top: 1rem;
 }
 
 .stamp .company-logo {
+	
 	padding: 0.25rem;
 	border-radius: 5px;
 	width: 50px;
@@ -208,10 +211,8 @@ section {
 .tooltip .tooltiptext {
 	visibility: hidden;
 	position: absolute;
-	width: 180px;
-	top: 120%;
-	left: -120px;
-	z-index: 2;
+	width: 160px;
+	z-index: 20;
 
 	color: white;
 	background-color: var(--primary);
@@ -224,12 +225,40 @@ section {
 
 .tooltip:hover .tooltiptext {
 	visibility: visible;
-	animation: fadein 0.5s;
+	animation: tooltip-fadein 0.5s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; top: -5px;}
-    to   { opacity: 1; }
+.tooltip-left .tooltiptext {
+	top: 10px;
+	right: max(90%, 15px);
+}
+
+.tooltip-bottom .tooltiptext {
+	top: 120%;
+	right: min(90%, 10px);
+}
+
+@keyframes tooltip-fadein {
+	from {
+		opacity: 0;
+		top: -5px;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+	.cards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 /* ---- COMMONS ---- */
@@ -312,4 +341,16 @@ section {
 
 .mb-5 {
 	margin-bottom: 3rem;
+}
+
+/* Position */
+.sticky {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0; /* required */
+}
+
+/* Shadow */
+.shadow {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

@@ -7,7 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<!-- <meta http-equiv="refresh" content="3" /> -->
+		<meta http-equiv="refresh" content="3" />
 
 		<!-- Personal CSS -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -30,18 +30,20 @@
 	</head>
 
 	<body>
-		<nav class="container topnav">
-			<span class="logo noselect">vxgs</span>
+		<div id="header" class="sticky bg-white" style="z-index: 1000">
+			<nav class="container topnav">
+				<span class="logo noselect">vxgs</span>
 
-			<div class="items">
-				<a href="#professional">Professional</a>
-				<a href="#education">Education</a>
-				<a href="#" class="tooltip">
-					<span>Contact</span>
-					<span class="tooltiptext">Try one of the social medias bellow</span>
-				</a>
-			</div>
-		</nav>
+				<div class="items">
+					<a href="#professional">Professional</a>
+					<a href="#education">Education</a>
+					<a href="#header" class="tooltip tooltip-bottom">
+						<span>Contact</span>
+						<span class="tooltiptext">Try one of the social medias bellow</span>
+					</a>
+				</div>
+			</nav>
+		</div>
 
 		<div id="banner" class="container banner">
 			<div class="bg"></div>
@@ -50,12 +52,11 @@
 				<h1>Vaux <br />Gomes</h1>
 				<p>
 					<strong>
-						I'm a professor during daytime & <br />work as a programmer during
-						nights
+						I'm a professor during daytime & work as a programmer during nights
 					</strong>
 				</p>
 
-				<a href="#" class="btn">Skype me</a>
+				<a href="skype:vauxsandino?chat" class="btn">Skype me</a>
 
 				<ul class="horizontal-list">
 					<li>
@@ -78,17 +79,22 @@
 			</div>
 
 			<div class="icons">
-				<a href="#">
+				<a href="http://bit.ly/vx-instagram" target="_blank">
 					<i class="fab fa-instagram"></i>
 				</a>
-				<a href="#">
+				<a href="http://bit.ly/vx-github" target="_blank">
 					<i class="fab fa-github-square"></i>
 				</a>
-				<a href="#">
+				<a href="http://bit.ly/vx-scholar" target="_blank">
 					<i class="fas fa-user-graduate"></i>
 				</a>
-				<a href="#">
+				<a href="http://bit.ly/vx-linkedin" target="_blank">
 					<i class="fab fa-linkedin"></i>
+				</a>
+
+				<a href="./files/cv.pdf" target="__blank" class="tooltip tooltip-left">
+					<i class="fas fa-file-pdf"></i>
+					<span class="tooltiptext">Curriculum</span>
 				</a>
 			</div>
 		</div>
@@ -237,7 +243,13 @@
 
 				<div class="card border-line">
 					<strong>MSc. Computer Science</strong>
-					<p>BLACK: Boosted Lazy Associative Classifier</p>
+					<a
+						href="files/education/ufmg/2017-UFMG-MSC-Final-Project.pdf"
+						target="__blank"
+					>
+						<span>BLACK: Boosted Lazy Associative Classifier</span>
+						<i class="far fa-file-pdf"></i>
+					</a>
 					<small> 2015 - 2017 </small>
 
 					<div class="stamp">
@@ -247,6 +259,7 @@
 							alt="ifce"
 							width="50px"
 						/>
+
 						<div>
 							<strong>UFMG</strong><br />
 							<strong>
@@ -258,7 +271,13 @@
 
 				<div class="card border-line">
 					<strong>BSc. Computer Science</strong>
-					<p>LAD: Logical Analysis of Data</p>
+					<a
+						href="files/education/ufersa/2014-UFERSA-BSC-Final-Project.pdf"
+						target="__blank"
+					>
+						<span>LAD: Logical Analysis of Data</span>
+						<i class="far fa-file-pdf"></i>
+					</a>
 					<small> 2009 - 2014 </small>
 
 					<div class="stamp">
@@ -301,7 +320,22 @@
 		</div>
 	</body>
 
-	<script></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function (event) {
+			// Nav scroll
+			window.onscroll = function () {
+				console.log(window.pageYOffset);
+
+				var e = document.getElementById('header');
+
+				if (window.pageYOffset > 10) {
+					e.classList.add('shadow');
+				} else {
+					e.classList.remove('shadow');
+				}
+			};
+		});
+	</script>
 </html>
 
 <!-- https://dribbble.com/shots/15293127-Mickael-Personal-Website -->
