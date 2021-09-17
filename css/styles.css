@@ -224,6 +224,18 @@ section {
 	transform: scale(105%);
 }
 
+/* Apps */
+.apps {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1rem;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+}
+
 /* Progress */
 .progress-bar {
 	width: 100%;
