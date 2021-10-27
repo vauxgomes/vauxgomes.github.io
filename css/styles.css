@@ -228,7 +228,7 @@ section {
 /* Apps */
 .apps {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
 }
 
@@ -241,7 +241,7 @@ section {
 	font-size: small;
 
 	padding-top: 0.5rem;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 
 	border-top: 1px solid var(--line-gray);
 }
