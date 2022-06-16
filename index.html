@@ -1,304 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<!-- <meta http-equiv="refresh" content="3" /> -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- <meta http-equiv="refresh" content="3" /> -->
 
-		<!-- Personal CSS -->
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-		<!-- Font Awesome -->
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-			crossorigin="anonymous"
-		/>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
-		<!-- Material Icons -->
-		<link
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet"
-		/>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-		<title>Vaux Gomes</title>
-	</head>
+    <title>Vaux Gomes</title>
+  </head>
 
-	<body>
-		<nav class="container topnav">
-			<span class="logo noselect">vxgs</span>
+  <body>
+    <!-- Topbar -->
+    <div id="topbar" class="sticky">
+      <div class="topbar container">
+        <div class="logo noselect">
+          <span>vxgs</span>
+        </div>
 
-			<div class="items">
-				<a href="#professional">Professional</a>
-				<a href="#education">Education</a>
-				<a href="#contacts">Contact</a>
-			</div>
-		</nav>
+        <nav>
+          <a href="#experience">Professional</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contacts</a>
+        </nav>
+      </div>
+    </div>
 
-		<div id="banner" class="container banner">
-			<div class="bg"></div>
+    <!-- Banner -->
+    <section id="banner">
+      <div class="container">
+        <h2>
+          I'm a professor during daytime and <br />
+          work as a &#60;programmer/&#62; during nights
+        </h2>
 
-			<div class="info">
-				<h1>Vaux <br />Gomes</h1>
-				<p>
-					<strong>
-						I'm a professor during daytime & <br />work as a programmer during
-						nights
-					</strong>
-				</p>
+        <div class="cards">
+          <div class="card">
+            <h4>Email</h4>
+            <p class="noselect">
+              vauxgomes <i class="fas fa-at fa-xs"></i> gmail
+            </p>
+          </div>
 
-				<a href="#" class="btn">Skype me</a>
+          <div class="card">
+            <h4>Skype</h4>
+            <p>Vaux Gomes</p>
+          </div>
 
-				<ul class="horizontal-list">
-					<li>
-						<strong class="d-block">Email</strong>
-						<span class="noselect"
-							>vauxgomes <i class="fas fa-at fa-xs"></i> gmail</span
-						>
-					</li>
+          <div class="card">
+            <h4>Location</h4>
+            <p>Brazil</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<li>
-						<strong class="d-block">Skype</strong>
-						<span>Vaux Gomes</span>
-					</li>
+    <!-- Experiences -->
+    <section id="experience" class="alternative">
+      <div class="container">
+        <header>
+          <h2>Professional Experiences</h2>
+          <p>My way till this point in time</p>
+        </header>
 
-					<li>
-						<strong class="d-block">Location</strong>
-						<span>Rio Grande do Norte, Brazil</span>
-					</li>
-				</ul>
-			</div>
+        <div class="content-grid">
+          <div class="experience exp-1 active" data-target="#desc-exp-1">
+            <h4>Technology Professor</h4>
+            <p>IFCE</p>
+            <small>Full time</small>
+          </div>
 
-			<div class="icons">
-				<a href="#">
-					<i class="fab fa-instagram"></i>
-				</a>
-				<a href="#">
-					<i class="fab fa-github-square"></i>
-				</a>
-				<a href="#">
-					<i class="fas fa-user-graduate"></i>
-				</a>
-				<a href="#">
-					<i class="fab fa-linkedin"></i>
-				</a>
-			</div>
-		</div>
+          <div class="experience exp-2" data-target="#desc-exp-2">
+            <h4>Backend Programmer</h4>
+            <p>Furukawa Eletric Latam</p>
+            <small>Part time</small>
+          </div>
 
-		<div id="professional" class="bg-light">
-			<div class="container p-lg">
-				<h3 class="pb-3">Professional Exprerience</h3>
-				<p class="text-dark-gray mb-4">Professional experience</p>
+          <div class="experience exp-3" data-target="#desc-exp-3">
+            <h4>Full-Stack Software Developer</h4>
+            <p>Elógica</p>
+          </div>
 
-				<div class="cards">
-					<div class="card">
-						<strong>Technology Professor</strong>
-						<p>Head of the Networks Technology Undergraduate Program</p>
+          <div class="experience exp-4" data-target="#desc-exp-4">
+            <h4>Junior Software Analyst</h4>
+            <p>Accenture Brazil</p>
+          </div>
 
-						<small>
-							Full time<br />
-							May 2019 - Current
-						</small>
+          <div class="exp-descriptions">
+            <div id="desc-exp-1" class="exp-description active">
+              <h2>Head of the Networks Technology Undergraduate Program</h2>
+              <p>Sep 2020 - Current</p>
+              <h2>
+                Math, Descriptive Statistics, Programming & Web Development
+                Professor
+              </h2>
+              <p>May 2019 - Current</p>
+            </div>
 
-						<div class="stamp">
-							<img
-								class="company-logo bg-light"
-								src="img/companies/if.png"
-								alt="ifce"
-								width="50px"
-							/>
-							<div>
-								<strong>IFCE</strong><br />
-								<strong>
-									<small>Ceará, Brazil</small>
-								</strong>
-							</div>
-						</div>
-					</div>
+            <div id="desc-exp-2" class="exp-description">
+              <h2>
+                Working on a Cloud Project. AWS technlogies, Java Spring Boot,
+                Docker, etc.
+              </h2>
+              <p>Sep 2020 - Current</p>
+              <small>*In association with IFCE</small>
+            </div>
 
-					<div class="card">
-						<strong>Backend programmer</strong>
-						<p>
-							Working on a Cloud Project. AWS technlogies, Spring boot, Docker,
-							etc. <br />
-							<small>*In association with IFCE</small>
-						</p>
+            <div id="desc-exp-3" class="exp-description">
+              <h2>
+                Building and maintaining finance management web application
+              </h2>
+              <p>Oct 2018 - Apr 2019</p>
+            </div>
 
-						<small>
-							Part time<br />
-							Jun 2021 - Current
-						</small>
+            <div id="desc-exp-4" class="exp-description">
+              <h2>
+                Building and maintaining internal process management systems &
+                Analysis of Data
+              </h2>
+              <p>May 2017 - Oct 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="stamp">
-							<img
-								class="company-logo bg-light"
-								src="img/companies/furukawa.png"
-								alt="ifce"
-								width="50px"
-							/>
-							<div>
-								<strong>Furukawa Eletric LatAm</strong><br />
-								<strong>
-									<small>Ceará, Brazil</small>
-								</strong>
-							</div>
-						</div>
-					</div>
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <header>
+          <h2>Education</h2>
+          <p>Formal Education</p>
+        </header>
 
-					<div class="card">
-						<strong>Full-stack software developer</strong>
-						<p>Building and maintaining finance management web application</p>
+        <div class="cards">
+          <div class="card">
+            <h4>MSc. Computer Science</h4>
+            <p>UFMG, Belo Horizonte, Brazil. 2015 - 2017</p>
 
-						<small>
-							Full time<br />
-							Oct 2018 - Apr 2019
-						</small>
+            <a
+              href="https://vauxgomes.github.io/files/education/ufmg/2017-UFMG-MSC-Final-Project.pdf"
+              target="__blank"
+            >
+              <i class="far fa-file-pdf"></i>
+              BLACK: Boosted Lazy Associative Classifier
+            </a>
+          </div>
 
-						<div class="stamp">
-							<img
-								class="company-logo bg-light"
-								src="img/companies/elogica.png"
-								alt="ifce"
-								width="50px"
-							/>
-							<div>
-								<strong>Ifce</strong><br />
-								<strong>
-									<small>Ceará, Brazil</small>
-								</strong>
-							</div>
-						</div>
-					</div>
+          <div class="card">
+            <h4>BSc. Computer Science</h4>
+            <p>UFERSA Mossoró, Brazil. 2009 - 2014</p>
 
-					<div class="card">
-						<strong>Junior Analyst</strong>
-						<p>
-							Building and maintaining internal process management systems.
-							Analysis of Data
-						</p>
+            <a
+              href="https://vauxgomes.github.io/files/education/ufersa/2014-UFERSA-BSC-Final-Project.pdf"
+              target="__blank"
+            >
+              <i class="far fa-file-pdf"></i>
+              <span>LAD: Logical Analysis of Data</span>
+            </a>
+          </div>
 
-						<small>
-							Full time<br />
-							May 2017 - Oct 2019
-						</small>
+          <div class="card">
+            <h4>
+              Brazil Science Without Borders Scholarship - Undergrad Program
+            </h4>
+            <p>MSU Missouri, USA. 2012 - 2013</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="stamp">
-							<img
-								class="company-logo bg-light"
-								src="img/companies/accenture.png"
-								alt="ifce"
-								width="50px"
-							/>
-							<div>
-								<strong>Accenture Brazil</strong><br />
-								<strong>
-									<small>Recife, Brazil</small>
-								</strong>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- Projects -->
+    <section id="projects" class="alternative">
+      <div class="container">
+        <header>
+          <h2>Projects and Mockups</h2>
+          <p>On going projects and mockups</p>
+        </header>
 
-		<div id="education" class="container">
-			<h3 class="pb-3">Education</h3>
-			<p class="text-dark-gray mb-4">Formal education</p>
+        <div class="projects">
+          <div class="softwares">
+            <h4>Softwares</h4>
+            <p style="font-size: small" class="pb-3">
+              Machine learning related software
+            </p>
 
-			<div class="cards">
-				<div class="card bg-light">
-					<strong>Specialization in Education</strong>
-					<p>Specialization in Education</p>
-					<small> 2021 - Current </small>
+            <div>
+              <a href="https://bit.ly/lad-weka-java">
+                LADWEKA <i class="fab fa-github"></i>
+              </a>
+              <small class="text-muted">
+                Free and scalable implementation of Logical Analysis of Data
+                Classifier - Java.
+              </small>
+            </div>
 
-					<div class="stamp">
-						<img
-							class="company-logo bg-white"
-							src="img/companies/if.png"
-							alt="ifce"
-							width="50px"
-						/>
-						<div>
-							<strong>IFPB</strong><br />
-							<strong>
-								<small>Paraíba, Brazil</small>
-							</strong>
-						</div>
-					</div>
-				</div>
+            <div>
+              <a href="https://bit.ly/lad-python">
+                LAD <i class="fab fa-github"></i>
+              </a>
+              <small class="text-muted">
+                Multiclass Eager and Lazy Logical Analysis of Data - Python
+              </small>
+            </div>
 
-				<div class="card border-line">
-					<strong>MSc. Computer Science</strong>
-					<p>BLACK: Boosted Lazy Associative Classifier</p>
-					<small> 2015 - 2017 </small>
+            <div>
+              <a href="https://bit.ly/lad-python">
+                BLACK <i class="fab fa-github"></i>
+              </a>
+              <small class="text-muted">
+                Boosted rule-based demand-driven lazy machine learning algorithm
+              </small>
+            </div>
+          </div>
 
-					<div class="stamp">
-						<img
-							class="company-logo bg-light"
-							src="img/education/ufmg.png"
-							alt="ifce"
-							width="50px"
-						/>
-						<div>
-							<strong>UFMG</strong><br />
-							<strong>
-								<small>Belo Horizonte, Brazil</small>
-							</strong>
-						</div>
-					</div>
-				</div>
+          <div class="apps">
+            <h4>Apps</h4>
+            <p style="font-size: small" class="pb-3">Apps/Mocks</p>
 
-				<div class="card border-line">
-					<strong>BSc. Computer Science</strong>
-					<p>LAD: Logical Analysis of Data</p>
-					<small> 2009 - 2014 </small>
+            <div>
+              <a href="https://vauxgomes.github.io/wellboard" target="_blank">
+                Wellboard
+              </a>
+              <small class="text-muted">
+                Editable Alternative Communication Board
+              </small>
+            </div>
 
-					<div class="stamp">
-						<img
-							class="company-logo bg-light"
-							src="img/education/ufersa.png"
-							alt="ifce"
-							width="50px"
-						/>
-						<div>
-							<strong>UFERSA</strong><br />
-							<strong>
-								<small>Mossoró, Brazil</small>
-							</strong>
-						</div>
-					</div>
-				</div>
+            <div>
+              <a href="https://vauxgomes.github.io/brainstormer"
+                >Brainstormer</a
+              >
+              <small class="text-muted">
+                For gathering ideas <i class="fas fa-rocket"></i>
+              </small>
+            </div>
 
-				<div class="card border-line">
-					<strong>Scholarship</strong>
-					<p>Brazil Science Without Borders Scholarship</p>
-					<small> 2012 - 2013 </small>
+            <!-- <div >
+							<a href="#">Schdler</a>
+							<small class="text-muted">
+								For building class schedules for schools
+							</small>
+						</div> -->
 
-					<div class="stamp">
-						<img
-							class="company-logo border-line"
-							src="img/education/msu.png"
-							alt="ifce"
-							width="50px"
-						/>
-						<div>
-							<strong>MSU</strong><br />
-							<strong>
-								<small>Missoury, USA</small>
-							</strong>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+            <div>
+              <a href="https://vauxgomes.github.io/thepiano">Piano</a>
+              <small class="text-muted"> A fun piano App </small>
+            </div>
 
-	<script></script>
+            <div>
+              <a href="https://vauxgomes.github.io/smarthousemanager">
+                Smart House Manager
+              </a>
+              <small class="text-muted">
+                An dashboard for smart houses <i class="fas fa-rocket"></i>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <small class="note mt-3"><i class="fas fa-rocket"> </i> Mockup</small>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contact">
+      <div class="container">
+        <header>
+          <h2>Contacts</h2>
+        </header>
+
+        <div class="links">
+          <a
+            class="card card-min"
+            href="http://bit.ly/vx-github"
+            target="_blank"
+          >
+            <i class="fab fa-github-square fa-lg"></i>
+          </a>
+
+          <a
+            class="card card-min"
+            href="http://bit.ly/vx-linkedin"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+
+          <a
+            class="card card-min"
+            href="http://bit.ly/vx-scholar"
+            target="_blank"
+          >
+            <i class="fas fa-user-graduate fa-lg"></i>
+          </a>
+
+          <a
+            class="card card-min"
+            href="./files/cv.pdf"
+            target="__blank"
+            class="tooltip tooltip-left"
+          >
+            <i class="fas fa-file-pdf fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container" style="font-size: small">
+      <i class="fas fa-route"></i> In the end, there is just a small inline
+      styled footer. I hope you liked it.
+    </footer>
+    <script src="/js/app.js"></script>
+  </body>
 </html>
 
 <!-- https://dribbble.com/shots/15293127-Mickael-Personal-Website -->
+<!-- 2022 - https://dribbble.com/shots/15714439-splt-js/attachments/7514939?mode=media -->

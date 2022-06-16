@@ -1,0 +1,54 @@
+/* Top bar */
+
+#topbar {
+  background-color: inherit;
+  z-index: 100;
+  /* margin-bottom: 1rem; */
+}
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  background-color: inherit;
+  /* margin-bottom: 1rem; */
+}
+
+#topbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  font: var(--small);
+}
+
+#topbar nav a {
+  /* padding-bottom: 0.5rem; */
+  border-bottom: 2px solid transparent;
+}
+
+#topbar .logo {
+  width: 70px;
+  height: 40px;
+
+  padding: 0.25em;
+
+  color: var(--primary);
+  font-weight: 600;
+
+  background-color: var(--background-alternative);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#topbar.sticky {
+  position: sticky;
+  top: 0;
+}
