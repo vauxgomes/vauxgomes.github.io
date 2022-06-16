@@ -1,0 +1,43 @@
+/* Banner */
+
+#banner h2 {
+  margin-bottom: var(--sp-xl);
+  text-align: center;
+  font-weight: 500;
+}
+
+#banner h4 {
+  margin-bottom: var(--sp-sm);
+  font-weight: 500;
+}
+
+#banner .card span {
+  color: var(--primary);
+  font-weight: 300;
+}
+
+#banner .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-sm);
+}
+
+#banner .cards .card:first-child {
+  grid-column: 1/3;
+}
+
+@media (min-width: 768px) {
+  #banner .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-lg);
+  }
+
+  #banner .cards .card:first-child {
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 992px) {
+  #banner .cards {
+    gap: var(--sp-xl);
+  }
+}

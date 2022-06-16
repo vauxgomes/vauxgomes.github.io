@@ -1,0 +1,6 @@
+#education .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+  gap: var(--sp-md);
+}

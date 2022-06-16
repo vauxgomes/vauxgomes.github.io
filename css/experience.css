@@ -1,0 +1,86 @@
+/* Experience */
+
+#experience .content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'exp-1 description description'
+    'exp-2 description description'
+    'exp-3 exp-4 .';
+  align-items: center;
+  justify-items: start;
+  gap: var(--sp-lg);
+}
+
+/* #experience .cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+} */
+
+#experience .experience {
+  cursor: pointer;
+
+  padding: var(--sp-md);
+
+  opacity: 0.6;
+  background-color: inherit;
+  border-radius: 5px;
+}
+
+.experience h4 {
+  margin-bottom: var(--sp-sm);
+  font-weight: 500;
+}
+
+.experience span,
+.experience p {
+  color: var(--primary);
+  font-weight: 300;
+}
+
+.experience p + small {
+  display: inline-block;
+  margin-top: var(--sp-md);
+}
+
+#experience .experience.active,
+#experience .experience:hover {
+  opacity: 1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#experience .exp-1 {
+  grid-area: exp-1;
+}
+
+#experience .exp-2 {
+  grid-area: exp-2;
+}
+#experience .exp-3 {
+  grid-area: exp-3;
+}
+
+#experience .exp-4 {
+  grid-area: exp-4;
+}
+
+.exp-descriptions {
+  grid-area: description;
+  grid-column: 2/4;
+  padding: var(--sp-md);
+}
+
+.exp-description {
+  display: none;
+  flex-direction: column;
+  gap: var(--sp-md);
+}
+
+.exp-description.active {
+  display: flex;
+}
+
+.exp-description h2 {
+  font-weight: 600;
+}

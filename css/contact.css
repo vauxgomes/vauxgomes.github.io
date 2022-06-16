@@ -1,0 +1,6 @@
+#contact .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-md);
+}

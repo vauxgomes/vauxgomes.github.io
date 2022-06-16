@@ -1,0 +1,33 @@
+/* Cards using https://getcssscan.com/css-box-shadow-examples : 19 */
+
+.card {
+  padding: var(--sp-md);
+
+  background-color: inherit;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-min {
+  width: min-content;
+}
+
+.card h4 {
+  margin-bottom: var(--sp-sm);
+  font-weight: 500;
+}
+
+.card span,
+.card p {
+  color: var(--primary);
+  font-weight: 300;
+}
+
+.card p + * {
+  display: inline-block;
+  margin-top: var(--sp-md);
+}
+
+.alternative .card {
+  color: var(--primary);
+}

@@ -1,0 +1,17 @@
+.projects {
+  display: flex;
+  gap: var(--sp-md);
+}
+
+.projects p {
+  margin-bottom: var(--sp-md);
+}
+
+.projects a {
+  display: block;
+  text-decoration: underline;
+}
+
+.projects div {
+  margin-bottom: var(--sp-md);
+}
