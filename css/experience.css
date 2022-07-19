@@ -2,14 +2,16 @@
 
 #experience .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    'exp-1 description description'
-    'exp-2 description description'
-    'exp-3 exp-4 .';
+    'exp-1 exp-2'
+    'exp-3 exp-4'
+    'description description';
   align-items: center;
   justify-items: start;
   gap: var(--sp-lg);
+
+  /* background: blue; */
 }
 
 /* #experience .cards {
@@ -67,7 +69,7 @@
 
 .exp-descriptions {
   grid-area: description;
-  grid-column: 2/4;
+  /* grid-column: 2/4; */
   padding: var(--sp-md);
 }
 
@@ -83,4 +85,16 @@
 
 .exp-description h2 {
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  #experience .content-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'exp-1 description description'
+      'exp-2 description description'
+      'exp-3 exp-4 .';
+
+    /* background: gray; */
+  }
 }
