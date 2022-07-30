@@ -1,3 +1,13 @@
+document.querySelector('#topbar-toggler').addEventListener('click', () => {
+  document.querySelector('#topbar nav').classList.toggle('show')
+})
+
+document.querySelectorAll('#topbar nav a').forEach((a) =>
+  a.addEventListener('click', () => {
+    document.querySelector('#topbar nav').classList.remove('show')
+  })
+)
+
 document.querySelectorAll('.experience').forEach((item) => {
   item.addEventListener('click', () => {
     target = item.getAttribute('data-target')

@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 1em;
 
   padding: 1rem;
   background-color: inherit;
@@ -18,12 +19,20 @@
 }
 
 #topbar nav {
-  display: flex;
-  align-items: center;
+  flex-basis: 100%;
+
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
 
+  padding-inline-start: 1rem;
   font: var(--small);
+}
+
+#topbar nav.show {
+  display: flex;
 }
 
 #topbar nav a {
@@ -51,4 +60,36 @@
 #topbar.sticky {
   position: sticky;
   top: 0;
+}
+
+#topbar .btn-toggler {
+  cursor: pointer;
+  align-self: flex-end;
+
+  /* height: 40px; */
+  padding: 0.7rem;
+
+  color: var(--primary);
+  background-color: var(--background-alternative);
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+#topbar .btn-toggler:hover {
+  border-color: var(--primary) !important;
+}
+
+@media (min-width: 576px) {
+  #topbar .btn-toggler {
+    display: none;
+  }
+
+  #topbar nav {
+    display: flex;
+    flex-basis: auto;
+
+    flex-direction: row;
+    align-items: center;
+  }
 }

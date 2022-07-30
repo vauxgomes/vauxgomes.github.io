@@ -53,7 +53,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serrif;
   background-color: var(--background);
-  min-width: 470px;
+  min-width: 370px;
 }
 
 a {
