@@ -1,0 +1,63 @@
+#schedule .week {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#schedule .day-name {
+  align-self: center;
+  justify-self: center;
+
+  cursor: pointer;
+  text-align: center;
+
+  padding: var(--sp-md);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#schedule .day-name.active {
+  color: white;
+  background-color: var(--primary);
+  border-radius: 5px;
+
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+
+#activities table {
+  width: 100%;
+  border-spacing: var(--sp-sm);
+  border-collapse: collapse;
+}
+
+#activities table tr {
+  margin-bottom: var(--sp-md);
+}
+
+#activities table thead th {
+  text-align: left;
+}
+
+#activities table th,
+#activities table td {
+  padding: var(--sp-md);
+}
+
+#activities table td {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#activities table td:first-child {
+  color: var(--primary);
+  font-weight: 500;
+  width: 140px;
+
+  border-radius-inline: 8px;
+}
+
+@media (min-width: 576px) {
+  #schedule .week {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
