@@ -58,13 +58,16 @@ const activities = document.querySelector('#activities tbody')
 const days = document.querySelectorAll('.day-name')
 const today = new Date()
 
-if (today.getDay() <= 4 && today.getDay() > 1) {
-  showActivities(today.getDay() - 2)
+if (today.getDay() <= 5 && today.getDay() >= 1) {
+  showActivities(today.getDay() - 1)
 }
 
 days.forEach((day, index) => {
   day.addEventListener('click', (e) => {
-    document.querySelector('.day-name.active').classList.remove('active')
+    const active = document.querySelector('.day-name.active');
+    if (active)
+      active.classList.remove('active')
+
     showActivities(index)
   })
 })
