@@ -10,7 +10,7 @@ const schedule = [
       {
         start: '13:30',
         end: '16:30',
-        activity: 'Reuniões'
+        activity: 'Coordenação RDC'
       }
     ]
   },
@@ -18,13 +18,13 @@ const schedule = [
     day: 'Tuesday',
     activities: [
       {
-        start: '07:30',
-        end: '11:30',
+        start: '13:30',
+        end: '16:30',
         activity: 'Coordenação RDC'
       },
       {
-        start: '13:30',
-        end: '16:30',
+        start: '18:00',
+        end: '21:00',
         activity: 'Coordenação RDC'
       }
     ]
@@ -34,18 +34,18 @@ const schedule = [
     activities: [
       {
         start: '07:30',
-        end: '08:59',
-        activity: 'Coordenação RDC'
-      },
-      {
-        start: '09:00',
         end: '11:00',
-        activity: 'Aula'
+        activity: 'Coordenação RDC'
       },
       {
         start: '13:00',
         end: '15:00',
         activity: 'Atendimento a aluno'
+      },
+      {
+        start: '18:00',
+        end: '20:00',
+        activity: 'Aula'
       }
     ]
   },
@@ -54,21 +54,16 @@ const schedule = [
     activities: [
       {
         start: '07:00',
-        end: '08:59',
+        end: '09:00',
         activity: 'Aula'
       },
       {
-        start: '09:20',
-        end: '11:30',
-        activity: 'Aula'
+        start: '09:10',
+        end: '11:00',
+        activity: 'Reuniões'
       },
       {
-        start: '13:30',
-        end: '14:20',
-        activity: 'Aula'
-      },
-      {
-        start: '15:00',
+        start: '13:20',
         end: '17:00',
         activity: 'Aula'
       }
@@ -79,23 +74,18 @@ const schedule = [
     activities: [
       {
         start: '07:30',
-        end: '08:20',
-        activity: 'Aula'
-      },
-      {
-        start: '08:21',
-        end: '09:19',
-        activity: 'Cafezinho'
-      },
-      {
-        start: '09:20',
-        end: '11:30',
+        end: '11:10',
         activity: 'Aula'
       },
       {
         start: '13:00',
         end: '17:00',
         activity: 'Reuniões/Preparação de aula'
+      },
+      {
+        start: '18:00',
+        end: '20:00',
+        activity: 'Aula'
       }
     ]
   }
