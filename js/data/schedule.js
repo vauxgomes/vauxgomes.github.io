@@ -3,14 +3,24 @@ const schedule = [
     day: 'Monday',
     activities: [
       {
-        start: '07:30',
-        end: '11:30',
-        activity: 'Coordenação RDC'
+        start: '09:00',
+        end: '11:00',
+        activity: 'Horário de Atendimento'
       },
       {
-        start: '13:30',
-        end: '16:30',
-        activity: 'Coordenação RDC'
+        start: '13:20',
+        end: '14:10',
+        activity: 'Desenvolvimento Web 2'
+      },
+      {
+        start: '14:10',
+        end: '15:00',
+        activity: 'Desenvolvimento Web 1'
+      },
+      {
+        start: '15:00',
+        end: '17:00',
+        activity: 'Estrutura de Dados'
       }
     ]
   },
@@ -18,14 +28,19 @@ const schedule = [
     day: 'Tuesday',
     activities: [
       {
-        start: '13:30',
-        end: '16:30',
-        activity: 'Coordenação RDC'
+        start: '09:30',
+        end: '11:20',
+        activity: 'Desenvolvimento Web 1'
       },
       {
-        start: '18:00',
-        end: '21:00',
-        activity: 'Coordenação RDC'
+        start: '13:00',
+        end: '15:00',
+        activity: 'Estrutura de Dados'
+      },
+      {
+        start: '15:20',
+        end: '17:00',
+        activity: 'Desenvolvimento Web 2'
       }
     ]
   },
@@ -33,60 +48,18 @@ const schedule = [
     day: 'Wednesday',
     activities: [
       {
-        start: '07:30',
+        start: '09:00',
         end: '11:00',
-        activity: 'Coordenação RDC'
-      },
-      {
-        start: '13:00',
-        end: '15:00',
-        activity: 'Atendimento a aluno'
-      },
-      {
-        start: '18:00',
-        end: '20:00',
-        activity: 'Aula'
+        activity: 'Introdução à Análise de Dados'
       }
     ]
   },
   {
     day: 'Thursday',
-    activities: [
-      {
-        start: '07:00',
-        end: '09:00',
-        activity: 'Aula'
-      },
-      {
-        start: '09:10',
-        end: '11:00',
-        activity: 'Reuniões'
-      },
-      {
-        start: '13:20',
-        end: '17:00',
-        activity: 'Aula'
-      }
-    ]
+    activities: [{ start: '', end: '', activity: '-' }]
   },
   {
     day: 'Friday',
-    activities: [
-      {
-        start: '07:30',
-        end: '11:10',
-        activity: 'Aula'
-      },
-      {
-        start: '13:00',
-        end: '17:00',
-        activity: 'Reuniões/Preparação de aula'
-      },
-      {
-        start: '18:00',
-        end: '20:00',
-        activity: 'Aula'
-      }
-    ]
+    activities: [{ start: '', end: '', activity: '-' }]
   }
 ]
