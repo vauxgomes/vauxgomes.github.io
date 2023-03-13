@@ -48,18 +48,45 @@ const schedule = [
     day: 'Wednesday',
     activities: [
       {
-        start: '09:00',
-        end: '11:00',
-        activity: 'Introdução à Análise de Dados'
+        start: '10:00',
+        end: '12:00',
+        activity: 'CKP8299 - Sistemas De Bancos De Dados Distribuídos'
+      },
+      {
+        start: '14:00',
+        end: '16:00',
+        activity: 'CKP9011 - Introdução à Ciência de Dados'
+      },
+      {
+        start: '19:30',
+        end: '20:00',
+        activity: 'Orientação TCC'
       }
     ]
   },
   {
     day: 'Thursday',
-    activities: [{ start: '', end: '', activity: '-' }]
+    activities: [
+      {
+        start: '14:00',
+        end: '16:00',
+        activity: 'CKP8277 - Aprendizagem Automática'
+      },
+      {
+        start: '19:30',
+        end: '20:00',
+        activity: 'Orientação TCC'
+      }
+    ]
   },
   {
     day: 'Friday',
-    activities: [{ start: '', end: '', activity: '-' }]
+    activities: [
+      {
+        start: '10:00',
+        end: '12:00',
+        activity: 'CKP8299 - Sistemas De Bancos De Dados Distribuídos'
+      }
+    ]
   }
 ]
