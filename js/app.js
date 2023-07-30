@@ -39,17 +39,29 @@ const showActivities = (dayIndex) => {
   days[dayIndex].classList.add('active')
 
   activities.innerHTML = ''
-  schedule[dayIndex].activities.forEach((act) => {
+  schedule[dayIndex]?.activities.forEach((act) => {
     const tr = document.createElement('tr')
 
+    // Col 1
     let td = document.createElement('td')
     td.innerHTML = `${act.start} - ${act.end}`
     tr.append(td)
 
-    td = document.createElement('td')
-    td.innerHTML = act.activity
-    tr.append(td)
+    // Col 2
+    activity = document.createElement('span')
+    activity.innerText = act.activity
 
+    if (act.local) {
+      local = document.createElement('small')
+      local.classList.add('badge')
+      local.innerText = act.local
+    }
+
+    td = document.createElement('td')
+    td.append(activity)
+    td.append(local)
+
+    tr.append(td)
     activities.append(tr)
   })
 }
@@ -60,13 +72,14 @@ const today = new Date()
 
 if (today.getDay() <= 5 && today.getDay() >= 1) {
   showActivities(today.getDay() - 1)
+} else {
+  showActivities(0)
 }
 
 days.forEach((day, index) => {
   day.addEventListener('click', (e) => {
-    const active = document.querySelector('.day-name.active');
-    if (active)
-      active.classList.remove('active')
+    const active = document.querySelector('.day-name.active')
+    if (active) active.classList.remove('active')
 
     showActivities(index)
   })

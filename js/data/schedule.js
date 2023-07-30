@@ -3,24 +3,28 @@ const schedule = [
     day: 'Monday',
     activities: [
       {
-        start: '09:00',
-        end: '11:00',
-        activity: 'Horário de Atendimento'
+        start: '07:00',
+        end: '09:00',
+        activity: 'Introdução à Análise de Dados',
+        local: 'RDC'
       },
       {
-        start: '13:20',
-        end: '14:10',
-        activity: 'Desenvolvimento Web 2'
+        start: '11:10',
+        end: '12:00',
+        activity: 'Desenvolvimento Web 1',
+        local: 'INFONET'
       },
       {
-        start: '14:10',
+        start: '13:00',
         end: '15:00',
-        activity: 'Desenvolvimento Web 1'
+        activity: 'Estrutura de Dados',
+        local: 'RDC'
       },
       {
-        start: '15:00',
+        start: '15:20',
         end: '17:00',
-        activity: 'Estrutura de Dados'
+        activity: 'Desenvolvimento Web 2',
+        local: 'INFONET'
       }
     ]
   },
@@ -29,18 +33,21 @@ const schedule = [
     activities: [
       {
         start: '09:30',
-        end: '11:20',
-        activity: 'Desenvolvimento Web 1'
+        end: '11:10',
+        activity: 'Desenvolvimento Web 1',
+        local: 'INFONET'
       },
       {
         start: '13:00',
         end: '15:00',
-        activity: 'Estrutura de Dados'
+        activity: 'Estrutura de Dados',
+        local: 'RDC'
       },
       {
-        start: '15:20',
+        start: '16:10',
         end: '17:00',
-        activity: 'Desenvolvimento Web 2'
+        activity: 'Desenvolvimento Web 2',
+        local: 'INFONET'
       }
     ]
   },
@@ -48,44 +55,10 @@ const schedule = [
     day: 'Wednesday',
     activities: [
       {
-        start: '10:00',
-        end: '12:00',
-        activity: 'CKP8299 - Sistemas De Bancos De Dados Distribuídos'
-      },
-      {
         start: '14:00',
-        end: '16:00',
-        activity: 'CKP9011 - Introdução à Ciência de Dados'
-      },
-      {
-        start: '19:30',
-        end: '20:00',
-        activity: 'Orientação TCC'
-      }
-    ]
-  },
-  {
-    day: 'Thursday',
-    activities: [
-      {
-        start: '14:00',
-        end: '16:00',
-        activity: 'CKP8277 - Aprendizagem Automática'
-      },
-      {
-        start: '19:30',
-        end: '20:00',
-        activity: 'Orientação TCC'
-      }
-    ]
-  },
-  {
-    day: 'Friday',
-    activities: [
-      {
-        start: '10:00',
-        end: '12:00',
-        activity: 'CKP8299 - Sistemas De Bancos De Dados Distribuídos'
+        end: '17:00',
+        activity: 'Atendimento ao Aluno',
+        local: 'IART'
       }
     ]
   }
